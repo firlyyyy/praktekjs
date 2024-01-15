@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        
+        let nama1 = 'joan';
+        let beratJoan = 63;
+        let tinggiJoan = 1.55;
+
+        let nama2 = 'madan';
+        let beratMadan = 55;
+        let tinggiMadan = 1.59;
+
+        let imtMadan = beratMadan / tinggiMadan ** 2;
+        let imtJoan = beratJoan / tinggiJoan ** 2;
+
+
+        const madanHigherIMT = imtMadan > imtJoan
+        
+        console.log("nama: " + nama1);
+        console.log("berat: " + beratJoan);
+        console.log("tinggi: " + tinggiJoan);
+        console.log("=========================================")
+        console.log("nama: " + nama2);
+        console.log("berat: " + beratMadan);
+        console.log("tinggi: " + tinggiMadan);
+        console.log("=========================================")
+        console.log("imtJoan: " + imtJoan);
+        console.log("imtMadan: " + imtMadan);
+        console.log("=========================================")
+
+        if(madanHigherIMT) {
+            console.log("imtJoan " + madanHigherIMT);
+        } else {
+            console.log("imtMadan " + madanHigherIMT)
+        }
+        
+        
+
+    </script>
+</body>
+</html>
